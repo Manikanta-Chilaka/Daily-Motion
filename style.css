@@ -1,0 +1,163 @@
+/* CSS code for the pricing page */
+
+/* A global style for the font family and margin */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* A style for the container div */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* A style for the header div */
+.header {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* A style for the main div */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* A style for the objectives and requirements divs */
+.objectives, .requirements {
+    width: 45%;
+}
+
+/* A style for the h1 and h2 elements */
+h1, h2 {
+    color: #333333;
+}
+
+/* A style for the ul and li elements */
+ul, li {
+    list-style-type: none;
+}
+
+/* A style for the footer div */
+.footer {
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+}
+
+/* A style for the toggle div */
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* A style for the switch label */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 10px;
+}
+
+/* A style for the switch input */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* A style for the slider span */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* A style for the slider before pseudo-element */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* A style for the input checked state */
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+/* A style for the input checked state before pseudo-element */
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* A style for the toggle text span */
+#toggle-text {
+    font-weight: bold;
+}
+
+/* A style for the cards div */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* A style for the card div */
+.card {
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* A style for the card hover state */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* A style for the card h3 element */
+.card h3 {
+    text-align: center;
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* A style for
+ the card price element */
+.card .price {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* A style for the card features element */
+.card .features {
+    padding: 10px;
+}
+
+/* A style for the card button element */
+.card .button {
+    display: block;
+}
